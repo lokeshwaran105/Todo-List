@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0 auto;
+  width: 80%;
+  background-color: slateblue;
+  
+}
+
+header{
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(41, 38, 38);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand{
+  margin-left: 5px;
+}
+
+.brand-logo{
+  width: 50px;
+}
+
+.connect-btn{
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  margin-top: 20px;
+  min-height: 400px;
+  width: 900px;
+  background-color: black;
+  display: flex;
+  border-radius: 10px;
+}
+
+.menu{
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(26, 25, 29);
+  color: white;
+}
+
+.todo-menu{
+  width: 200px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.todo-menu ul{
+  margin-top: 25px;
+  list-style: none;
+}
+
+.todo-menu ul li{
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.todo-result{
+  width: 100%;
+  color: white;
+  position: relative;
+  /* background-color: w; */
+}
+
+.todo-create{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  /* border: 2px solid white; */
+}
+
+.todo-result h2{
+  margin: 5px 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#create-task>h2{
+  margin-top: 50px;
+}
+
+.todo-create input{
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.todo-create button{
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.todo-table{
+  margin: 20px 40px;
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.todo-table tr, th, td{
+  border: 1px solid white;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.todo-table .description {
+  max-width: 300px;
+}
+
+.task-status{
+  text-align: center;
+}
+
+.complete{
+  background-color: rgb(21, 21, 141);
+  color: white;
+}
+
+.delete{
+  background-color: red;
+  color: antiquewhite;
+}
+
+.action-btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.action-btn button{
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  border-style: none;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+  .card {
+    width: 80%;
+  }
+  .todo-create {
+    margin: 50px 50px;
+    overflow-x: auto;
+  }
+}
+
+/* Mobiles */
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .todo-create {
+    margin: 50px 20px;
+    overflow-x: auto;
+  }
+}
+
